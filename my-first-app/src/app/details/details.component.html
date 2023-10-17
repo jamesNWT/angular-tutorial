@@ -1,0 +1,13 @@
+<button
+    class="btn btn-primary"
+    (click)="onShowDetails()"
+    >
+    Show Details
+</button>
+<p *ngIf="showDetails">Angular is cool!</p>
+<ul 
+    *ngFor="let timestamp of timesButtonClicked; let i = index"
+    [ngClass]="{greaterThanFive : i >= 5}"
+    >
+    {{timestamp}}
+</ul>

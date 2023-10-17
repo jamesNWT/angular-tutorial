@@ -1,1 +1,1 @@
-<p>Server with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<p [ngClass]="{online : isServerOnline, offline : !isServerOnline}">Server with ID {{ serverId }} is {{ getServerStatus() }}</p>
